@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "trading-app"
+version = "0.1.0"
+description = ""
+authors = ["Closidx <84374521+Closidx@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+asyncpg = "^0.28.0"
+sqlalchemy = "^2.0.20"
+uvicorn = "^0.23.2"
+alembic = "^1.12.0"
+pydantic = "^2.3.0"
+fastapi-users = {extras = ["sqlalchemy"], version = "^12.1.2"}
+psycopg2 = "^2.9.7"
+psycopg2-binary = "^2.9.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
