@@ -1,11 +1,12 @@
-import uuid
 from typing import Optional
 
 from fastapi import Depends, Request
-from fastapi_users import BaseUserManager, IntegerIDMixin, models, schemas, exceptions
+from fastapi_users import BaseUserManager, IntegerIDMixin, exceptions, models, schemas
 
-from auth.database import User, get_user_db
-from config import SECRET_KEY
+from .models import User
+from .utils import get_user_db
+
+from src.config import SECRET_KEY
 
 SECRET = SECRET_KEY
 
